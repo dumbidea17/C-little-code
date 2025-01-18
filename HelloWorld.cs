@@ -4,6 +4,7 @@
 using System;
 
 // classes are containers that store your code
+// only one public class within a c# file
 public class HelloWorld
 {
     // function == method
@@ -26,15 +27,30 @@ public class HelloWorld
         Console.Write("is good ");
         Console.Write("yes ");
         Console.Write("bananananana\n");
-        Dog dog1 = new Dog("Robert");
+        // object: the thing you make from a class
+        Dog objDog = new Dog("RANGER", 14);
+        Console.Write(objDog.toString());
+        Console.WriteLine(objDog.toInt());
     }
 }
 
-
+// class: a container that's used as a blueprint to make multiple copies of something (clones)
 class Dog{
-    String name;
+    String name; // before the name, include the data type of the variable you're creating
+    int age;
     // constructors: method that initializes the basics attributes of a class
-    public Dog(String name ){
+    public Dog(String name, int age){
         this.name = name;
+        this.age = age;
     }
+    
+    public String toString()
+    {
+        return "This dog's name is " + this.name;
+    }
+    public int toInt()
+    {
+        return this.age;
+    }   
+    
 }
