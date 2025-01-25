@@ -1,0 +1,28 @@
+// Online C# Editor for free
+// Write, Edit and Run your C# code using C# Online Compiler
+
+using System;
+
+// classes are containers that store your code
+// only one public class within a c# file
+public class HanPaperScissors
+{
+    // function == method
+    // tester method-> allows you to write and see code on the output/console
+    public static void Main(string[] args)
+    {
+    // title
+      Console.WriteLine("---------------------");
+      Console.WriteLine("Han, Paper, Scissors!");
+      Console.WriteLine("---------------------");
+      Console.WriteLine(" ");
+      Console.WriteLine("which do your pick, rock, paper, scissors! (pick bellow)");
+     // code to store players choice. 
+      string response = Console.ReadLine();
+      // string[] means list, this has all the ai choices.
+      string[] cpuChoice = {"rock", "paper", "scissor"};
+      //This picks the ai's choice. New make a new object(make an object class). We can use this object as a key for the random class. 
+      Random rand = new Random();
+    }
+}
+
