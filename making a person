@@ -1,0 +1,50 @@
+// Online C# Editor for free
+// Write, Edit and Run your C# code using C# Online Compiler
+
+using System;
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+    Console.WriteLine ("what is there name");
+    string askName = Console.ReadLine();
+    Console.WriteLine ("how much money do they have");
+    string askMoney = Console.ReadLine();
+    Console.WriteLine ("what home do they have");
+    string askHome = Console.ReadLine();
+    Console.WriteLine ("what car do they have");
+    string askCar = Console.ReadLine();
+    
+    
+    Guy objGuy = new Guy("RANGER", "s", "asd", "dasda");
+    Console.Write(objGuy.toString());
+    Console.WriteLine(objGuy.toString());
+    Console.Write(objGuy.toString());
+    Console.WriteLine(objGuy.toString());
+    }
+}
+
+
+
+
+class Guy{
+    string name;
+    string money;
+    string car;
+    string home;
+    
+    
+    public Guy(string name, string money, string car, string home){
+        this.name = name;
+        this.money = money;
+        this.car = car;
+        this.home = home;
+    }
+     public string toString()
+     {
+         return "there name is " + this.name;
+         return "there car is a " + this.car;
+         return "there home is a " + this.home;
+         return "the amount of money they have is " + this.money;
+     }
+}
