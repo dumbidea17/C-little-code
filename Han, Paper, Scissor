@@ -23,6 +23,16 @@ public class HanPaperScissors
       string[] cpuChoice = {"rock", "paper", "scissor"};
       //This picks the ai's choice. New make a new object(make an object class). We can use this object as a key for the random class. 
       Random rand = new Random();
+      //This make the range at which the cpu can pick from.
+      int cpuPick = rand.Next(0,2);
+      //This line prints the cpu's choice and 
+      Console.WriteLine(cpuChoice[cpuPick]);
+      //and in c# is && 
+      //If one of them is false the whole thing fails.
+      //or is ||
+      if(response ==  cpuPick){
+          
+      }
+      }
     }
 }
-
