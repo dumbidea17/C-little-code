@@ -16,11 +16,12 @@ public class HelloWorld
     string askCar = Console.ReadLine();
     
     
-    Guy objGuy = new Guy("RANGER", "s", "asd", "dasda");
+    Guy objGuy = new Guy(askName, askMoney, askCar, askHome);
     Console.Write(objGuy.toString());
-    Console.WriteLine(objGuy.toString());
-    Console.Write(objGuy.toString());
-    Console.WriteLine(objGuy.toString());
+    
+    //objGuy.money = "1 trillion";
+    
+   // Console.Write(objGuy.toString());
     }
 }
 
@@ -28,10 +29,10 @@ public class HelloWorld
 
 
 class Guy{
-    string name;
-    string money;
-    string car;
-    string home;
+    public string name;
+    public string money;
+    public string car;
+    public string home;
     
     
     public Guy(string name, string money, string car, string home){
@@ -42,9 +43,10 @@ class Guy{
     }
      public string toString()
      {
-         return "there name is " + this.name;
-         return "there car is a " + this.car;
-         return "there home is a " + this.home;
-         return "the amount of money they have is " + this.money;
+         return ("there name is " + this.name + ". there car is a " + this.car + ". there home is a " + this.home + ". the amount of money they have is "  + this.money);
      }
 }
+
+
+
+
