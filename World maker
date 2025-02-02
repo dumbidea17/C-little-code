@@ -1,0 +1,64 @@
+// Online C# Editor for free
+// Write, Edit and Run your C# code using C# Online Compiler
+
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine ("make a world, type yes, to start.");
+        string start = Console.ReadLine();
+        if (start == "yes"){
+                Console.WriteLine ("got it");
+                Random rand = new Random();
+                string[] liquid = {"urine", "oil", "sea water", "swamp water", "lava", "acid", "clear water", "yummy water", "emergency"};
+                int liquidpick = rand.Next(0,9);
+                int treespick = rand.Next(0,9);
+                int groundpick = rand.Next(0,9);
+                int peoplepick = rand.Next(0,9);
+                int animalpick = rand.Next(0,9);
+                Console.WriteLine(liquid[liquidpick]);
+                Console.WriteLine(liquidpick);
+                
+                Console.WriteLine(liquid[treepick]);
+                Console.WriteLine(treespick);
+                Console.WriteLine(liquid[groundpick]);
+                Console.WriteLine(groundpick);
+                Console.WriteLine(liquid[peoplepick]);
+                Console.WriteLine(peoplepick);
+                Console.WriteLine(liquid[animalpick]);
+                Console.WriteLine(animalpick);
+        
+            }
+        }
+    }
+    
+    
+    
+    
+    
+    
+//                int test1 = rand.Next(0,3);
+//              int test2 = rand.Next(0,3);
+//                int test3 = rand.Next(0,3);
+//                int test4 = rand.Next(0,3);
+//                int test5 = rand.Next(0,3);
+//                int test6 = rand.Next(0,3);
+//                int test7 = rand.Next(0,3);
+  //              int test8 = rand.Next(0,3);
+    //            int test9 = rand.Next(0,3);
+///                Console.WriteLine(liquid);
+ //               Console.WriteLine(trees);
+//                Console.WriteLine(ground);
+//                Console.WriteLine(people);
+//                Console.WriteLine(animals);
+//                Console.WriteLine(test1);
+//                Console.WriteLine(test2);
+//                Console.WriteLine(test3);
+//               Console.WriteLine(test4);
+ //               Console.WriteLine(test5);
+ //               Console.WriteLine(test6);
+   //             Console.WriteLine(test7);
+     //           Console.WriteLine(test8);
+       //         Console.WriteLine(test9);
