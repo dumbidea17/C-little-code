@@ -12,53 +12,24 @@ public class HelloWorld
         if (start == "yes"){
                 Console.WriteLine ("got it");
                 Random rand = new Random();
-                string[] liquid = {"urine", "oil", "sea water", "swamp water", "lava", "acid", "clear water", "yummy water", "emergency"};
+                string[] liquid = {"urine", "oil", "sea water", "swamp water", "lava", "acid", "clear water", "yummy water", "gold water"};
+				string[] trees = {"maple tree","oak tree","birch tree","metel tree","suffed tree", "leafless tree","sequoia tree","sakura tree","burned tree","bug filled trees"};
+				string[] ground ={"rough soil", "grassy ground", "frosted ground", "leave filled ground", "felt ground", "dirt ground", "paved road","sandy ground","sticky ground","no ground"};
+				string[] people ={"humans", "aliens", "bird folk", "giant rats", "robots", "living objects", "cartoon characters", "no people", "fake people"};
+				string[] animal = {"dinosuars", "giant bugs", "same as planet earth", "fishes","biomacanical animals","djungelskogs","no animals", "dragons", "ostriches"};
                 int liquidpick = rand.Next(0,9);
                 int treespick = rand.Next(0,9);
                 int groundpick = rand.Next(0,9);
                 int peoplepick = rand.Next(0,9);
                 int animalpick = rand.Next(0,9);
-                Console.WriteLine(liquid[liquidpick]);
-                Console.WriteLine(liquidpick);
-                
-                Console.WriteLine(liquid[treepick]);
-                Console.WriteLine(treespick);
-                Console.WriteLine(liquid[groundpick]);
-                Console.WriteLine(groundpick);
-                Console.WriteLine(liquid[peoplepick]);
-                Console.WriteLine(peoplepick);
-                Console.WriteLine(liquid[animalpick]);
-                Console.WriteLine(animalpick);
+                Console.WriteLine(liquid[liquidpick]);                
+                Console.WriteLine(trees[treespick]);
+                Console.WriteLine(ground[groundpick]);
+                Console.WriteLine(people[peoplepick]);
+                Console.WriteLine(animal[animalpick]);
+			
         
             }
         }
     }
-    
-    
-    
-    
-    
-    
-//                int test1 = rand.Next(0,3);
-//              int test2 = rand.Next(0,3);
-//                int test3 = rand.Next(0,3);
-//                int test4 = rand.Next(0,3);
-//                int test5 = rand.Next(0,3);
-//                int test6 = rand.Next(0,3);
-//                int test7 = rand.Next(0,3);
-  //              int test8 = rand.Next(0,3);
-    //            int test9 = rand.Next(0,3);
-///                Console.WriteLine(liquid);
- //               Console.WriteLine(trees);
-//                Console.WriteLine(ground);
-//                Console.WriteLine(people);
-//                Console.WriteLine(animals);
-//                Console.WriteLine(test1);
-//                Console.WriteLine(test2);
-//                Console.WriteLine(test3);
-//               Console.WriteLine(test4);
- //               Console.WriteLine(test5);
- //               Console.WriteLine(test6);
-   //             Console.WriteLine(test7);
-     //           Console.WriteLine(test8);
-       //         Console.WriteLine(test9);
+  
