@@ -1,0 +1,43 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		Random rand = new Random();
+		int Hp = rand.Next(5,9);
+		int maxHp = 10;
+		int sanity = rand.Next(70,90);
+		int maxSanity = 100;
+		int hunger = rand.Next(70,90);
+		int maxHunger = 100;
+		int money = rand.Next(50,100);
+		
+		Console.WriteLine("welcome to  a very dumbgeon dungeon, you should start your quest(type y to start)");
+        string start = Console.ReadLine();
+		if (start == "y" || start == "Y"){
+			Console.WriteLine("what is your characters name");
+			string name = Console.ReadLine();
+		 	Console.WriteLine($"{name}, werid name but sure, lets have that as your name(type y to continue for anything like this)");
+			String checkY = Console.ReadLine();
+			if (checkY == "y" || checkY == "Y"){
+				Console.WriteLine("remember you're aint the strongest, richest, or brainiest(is that a word?), or fullest person on earth,");
+				Console.WriteLine("so for a little help here:");
+				Console.WriteLine($"your health is {Hp}/{maxHp}, when you're pals say that your very strong, there lying.");
+				Console.WriteLine($"your sanity is {sanity}/{maxSanity}, wow that a new low score, I am proud of you.");
+				Console.WriteLine($"your starving {hunger}/{maxHunger}, next time eat more.");
+				Console.WriteLine($"the amount of gold you have is {money}(still broke compared to me, teehee.)");
+				String checkY2 = Console.ReadLine();
+				if (checkY2 == "y" || checkY2 == "Y"){
+
+					Console.WriteLine("You wake up in a dungeon, you don't exactly remember how you got there, probably from all that tax evasion.");
+					Console.WriteLine("all you know if you'll be in your cell for the rest of time, and when I mean “time” I just mean as long as it takes for you to open your cell, what shall you do.");
+					Console.WriteLine("HEADBUTT(1)");
+					Console.WriteLine("wait(2)");
+					Console.WriteLine("try to lock pick(3)");
+					Console.WriteLine("pry the door open(4)");
+					
+		}
+		}
+	}
+}
