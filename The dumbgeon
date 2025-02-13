@@ -36,8 +36,36 @@ public class Program
 					Console.WriteLine("wait(2)");
 					Console.WriteLine("try to lock pick(3)");
 					Console.WriteLine("pry the door open(4)");
+					String checkA = Console.ReadLine();
+					if (checkA == "1"){
+						Console.WriteLine("you smash you skull into the door, owch, you think as you're head hurt, but the door broke open so yaay. I think youll need some ibuprofen.");
+						Hp -= 2;
+						Console.WriteLine($"your health is {Hp}/{maxHp}, maybe use that head of you're, oh wait you can't.");
+					String checkA1 = Console.ReadLine();
+					if (checkA1 == "2"){
+						Console.WriteLine("you sit there and wait, and wait, and wait.... ok how long is this bit going to go, but while wait you notice a key laying on the floor. How STUPID you are not to notice that, you did get a bit hungry for your liking.");
+						hunger =- 2;
+						Console.WriteLine($"you loss {hunger}/{maxHunger}, just MOVE, IM BOARD.");
+					String checkA2 = Console.ReadLine();
+					if (checkA2 == "3"){
+						Console.WriteLine("all you have on you to lock pick is some gold coins, you put one in the lock hear a *click* anddddd it fell into the hole, you try again, *click* also fell into the hole, you keep doing it untilt you hear your final *click*.");
+						money =- rand.Next(20,30);
+						Console.WriteLine($"you have {money}, now youll have to pay for that lock, nice.");
+					String checkA3 = Console.ReadLine();
+					if (checkA3 == "4"){
+						Console.Write(" you use your raw strngth");
+					}
+						
+						
+					}
+					}
+
+	
+						
+					}
 					
 		}
 		}
+	}
 	}
 }
