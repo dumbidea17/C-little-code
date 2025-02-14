@@ -16,11 +16,13 @@ public class Program
 		Console.WriteLine("welcome to  a very dumbgeon dungeon, you should start your quest(type y to start)");
         string start = Console.ReadLine();
 		if (start == "y" || start == "Y"){
+		}
 			Console.WriteLine("what is your characters name");
 			string name = Console.ReadLine();
-		 	Console.WriteLine($"{name}, werid name but sure, lets have that as your name(type y to continue for anything like this)");
+		 	Console.WriteLine($"{name}, weird name but sure, lets have that as your name(type y to continue for anything like this)");
 			String checkY = Console.ReadLine();
 			if (checkY == "y" || checkY == "Y"){
+			}
 				Console.WriteLine("remember you're aint the strongest, richest, or brainiest(is that a word?), or fullest person on earth,");
 				Console.WriteLine("so for a little help here:");
 				Console.WriteLine($"your health is {Hp}/{maxHp}, when you're pals say that your very strong, there lying.");
@@ -29,7 +31,7 @@ public class Program
 				Console.WriteLine($"the amount of gold you have is {money}(still broke compared to me, teehee.)");
 				String checkY2 = Console.ReadLine();
 				if (checkY2 == "y" || checkY2 == "Y"){
-
+				}
 					Console.WriteLine("You wake up in a dungeon, you don't exactly remember how you got there, probably from all that tax evasion.");
 					Console.WriteLine("all you know if you'll be in your cell for the rest of time, and when I mean “time” I just mean as long as it takes for you to open your cell, what shall you do.");
 					Console.WriteLine("HEADBUTT(1)");
@@ -38,22 +40,25 @@ public class Program
 					Console.WriteLine("pry the door open(4)");
 					String checkA = Console.ReadLine();
 					if (checkA == "1"){
-						Console.WriteLine("you smash you skull into the door, owch, you think as you're head hurt, but the door broke open so yaay. I think youll need some ibuprofen.");
+						Console.WriteLine("you smash your skull into the door, owch, you think as your head hurts, but the door broke open so yay. I think you'll need some ibuprofen.");
+						sanity -= rand.Next(20,30);
+						Console.WriteLine($"your sanity is {sanity}/{maxSanity}, maybe use that head of you're, oh wait you can't.");
+					}
+					else if (checkA == "2"){
+						Console.WriteLine("you sit there and wait, and wait, and wait.... ok how long is this bit going to go, but while waiting you notice a key laying on the floor. How STUPID you are not to notice that, you did get a bit hungry for your liking.");
+						hunger -= rand.Next(20,30);
+						Console.WriteLine($"you loss {hunger}/{maxHunger}, just MOVE, I'M BORED.");
+					}
+					else if (checkA == "3"){
+						Console.WriteLine("all you have on you to lock pick is some gold coins, you put one in the lock hear a *click* anddddd it fell into the hole, you try again,");
+						Console.WriteLine("*click* also fell into the hole, you keep doing it until you hear your final *click*.");
+						money -= rand.Next(20,30);
+						Console.WriteLine($"you have {money}, now you'll have to pay for that lock, nice.");
+					}
+					else if (checkA == "4"){
+						Console.Write("you use your raw strength and RIP the door open, but your hands are now REALLY bloody and hurt, I would say that sounds painful if I wasn't so amused but you're pain.");
 						Hp -= 2;
-						Console.WriteLine($"your health is {Hp}/{maxHp}, maybe use that head of you're, oh wait you can't.");
-					String checkA1 = Console.ReadLine();
-					if (checkA1 == "2"){
-						Console.WriteLine("you sit there and wait, and wait, and wait.... ok how long is this bit going to go, but while wait you notice a key laying on the floor. How STUPID you are not to notice that, you did get a bit hungry for your liking.");
-						hunger =- 2;
-						Console.WriteLine($"you loss {hunger}/{maxHunger}, just MOVE, IM BOARD.");
-					String checkA2 = Console.ReadLine();
-					if (checkA2 == "3"){
-						Console.WriteLine("all you have on you to lock pick is some gold coins, you put one in the lock hear a *click* anddddd it fell into the hole, you try again, *click* also fell into the hole, you keep doing it untilt you hear your final *click*.");
-						money =- rand.Next(20,30);
-						Console.WriteLine($"you have {money}, now youll have to pay for that lock, nice.");
-					String checkA3 = Console.ReadLine();
-					if (checkA3 == "4"){
-						Console.Write(" you use your raw strngth");
+						Console.WriteLine($"you health is {Hp}/{maxHp}, Hey how about a high five *wink wink* *nug nug*.");
 					}
 						
 						
@@ -61,11 +66,5 @@ public class Program
 					}
 
 	
-						
-					}
-					
-		}
-		}
-	}
-	}
-}
+
+
