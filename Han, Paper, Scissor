@@ -58,6 +58,8 @@ public class HanPaperScissors
 	else if(response == "han"){ 
 		Console.WriteLine("https://en.wikipedia.org/wiki/Rock_paper_scissors#:~:text=The%20first%20known%20mention%20of,206%20BCE%20%E2%80%93%20220%20CE).");
 	}
+
+   // We will add a point system today
 	}
 		
 	}
