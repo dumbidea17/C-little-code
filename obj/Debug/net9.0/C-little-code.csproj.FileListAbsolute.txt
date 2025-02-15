@@ -1,0 +1,15 @@
+C:\Users\pasad\OneDrive\Documents\WaffleCal\C-little-code\bin\Debug\net9.0\C-little-code.exe
+C:\Users\pasad\OneDrive\Documents\WaffleCal\C-little-code\bin\Debug\net9.0\C-little-code.deps.json
+C:\Users\pasad\OneDrive\Documents\WaffleCal\C-little-code\bin\Debug\net9.0\C-little-code.runtimeconfig.json
+C:\Users\pasad\OneDrive\Documents\WaffleCal\C-little-code\bin\Debug\net9.0\C-little-code.dll
+C:\Users\pasad\OneDrive\Documents\WaffleCal\C-little-code\bin\Debug\net9.0\C-little-code.pdb
+C:\Users\pasad\OneDrive\Documents\WaffleCal\C-little-code\obj\Debug\net9.0\C-little-code.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pasad\OneDrive\Documents\WaffleCal\C-little-code\obj\Debug\net9.0\C-little-code.AssemblyInfoInputs.cache
+C:\Users\pasad\OneDrive\Documents\WaffleCal\C-little-code\obj\Debug\net9.0\C-little-code.AssemblyInfo.cs
+C:\Users\pasad\OneDrive\Documents\WaffleCal\C-little-code\obj\Debug\net9.0\C-little-code.csproj.CoreCompileInputs.cache
+C:\Users\pasad\OneDrive\Documents\WaffleCal\C-little-code\obj\Debug\net9.0\C-little-code.sourcelink.json
+C:\Users\pasad\OneDrive\Documents\WaffleCal\C-little-code\obj\Debug\net9.0\C-little-code.dll
+C:\Users\pasad\OneDrive\Documents\WaffleCal\C-little-code\obj\Debug\net9.0\refint\C-little-code.dll
+C:\Users\pasad\OneDrive\Documents\WaffleCal\C-little-code\obj\Debug\net9.0\C-little-code.pdb
+C:\Users\pasad\OneDrive\Documents\WaffleCal\C-little-code\obj\Debug\net9.0\C-little-code.genruntimeconfig.cache
+C:\Users\pasad\OneDrive\Documents\WaffleCal\C-little-code\obj\Debug\net9.0\ref\C-little-code.dll
