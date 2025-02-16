@@ -12,7 +12,8 @@ public class Program
 		int hunger = rand.Next(70,90);
 		int maxHunger = 100;
 		int money = rand.Next(50,100);
-		
+		int room = rand.Next(1,99);
+		int badHp = 0; 
 		Console.WriteLine("welcome to  a very dumbgeon dungeon, you should start your quest(type y to start)");
         string start = Console.ReadLine();
 		if (start == "y" || start == "Y"){
@@ -56,15 +57,79 @@ public class Program
 						Console.WriteLine($"you have {money}, now you'll have to pay for that lock, nice.");
 					}
 					else if (checkA == "4"){
-						Console.Write("you use your raw strength and RIP the door open, but your hands are now REALLY bloody and hurt, I would say that sounds painful if I wasn't so amused but you're pain.");
+						Console.WriteLine("you use your raw strength and RIP the door open, but your hands are now REALLY bloody and hurt, I would say that sounds painful if I wasn't so amused but you're pain.");
 						Hp -= 2;
 						Console.WriteLine($"you health is {Hp}/{maxHp}, Hey how about a high five *wink wink* *nug nug*.");
 					}
-						
-						
+					Console.WriteLine(" ");
+					Console.WriteLine("you walk outside of your cell and will now enter THE DUMBGEON(tm)");
+					string enter = Console.ReadLine();
+					if (enter == "y" || enter == "Y"){
 					}
-					}
-
-	
-
+						while (room <= 99){
+						room = rand.Next(1,1);
+							
+						if (room == 1){
+							Console.WriteLine("you walk into a room full of mice and a guy in the middle wearing a plague doctor suit");
+							Console.WriteLine("Plague doctor: hohoho hello my good sir, don't worry I don't bite (sometime) hohohoho");
+							Console.WriteLine("you feel like a your going crazy");
+							Console.WriteLine("Who the HECK are you(1)?");
+							Console.WriteLine("So why are you in the dumbgeon(2)");
+							Console.WriteLine("walk away(3)");
+							String checkA2 = Console.ReadLine();
+							if (checkA2 == "1"){
+								Console.WriteLine("Plague doctor: hohohoho I am a dungeon believe in Brian(rat god) and now shall spread his devotion.");
+								Console.WriteLine("he put his arm out in a gesture that make him seem like he want you join, shall you?");
+								Console.WriteLine("Sure I love rats(1)");
+								Console.WriteLine("I would ratter die a rat hater then live a rat");
+								string checkA3 = Console.ReadLine();
+								if (checkA3 == "1"){
+									Console.WriteLine("Plague doctor: hohohoho fan-TASTIC now ill just have to...");
+									Console.WriteLine("he says as he injects a needle into your skin to quick for you to react, owch");
+									Hp -= 1;
+									Console.WriteLine($"your hp is {Hp}/{maxHp} ok to consoner you as much as possible, I think that rat pee");
+									String ratpee = Console.ReadLine();
+									if (ratpee == "y" || ratpee == "Y"){
+										Console.WriteLine("Plague doctor: ok now don't eat any form of peanut made substence and I think youll be all set now... GET OUT");
+										Console.WriteLine("he says as he shoves you out the room");
+									}
+								if (checkA3 == "2"){
+									Console.WriteLine("Plague doctor: HOW DARE YOU!!! I MUST END YOU AND SACRIFICE YOU CORPSE TO BRIAN, RAT IT DINNER TIME, HOHOHOHOHOHOHOHOHOHOHOHOHOHOHOHOH");
+									Console.WriteLine("perpare for a tussel");
+									Console.WriteLine($"{Hp}/{maxHp}");
+									badHp = 4; 
+									Console.WriteLine($"{badHp}");
+									Console.WriteLine("ok, ill throw you in a fastfood deepfryer soon eighteen centry, insain essilime escapi(1).");
+									Console.WriteLine("actully I think I am going to be the mouse in this cat and mouse situation bye bye(2).");
+									String firsttussel = Console.ReadLine(); 
+									if (firsttussel == "1"){
+										Console.WriteLine("you two leap at eachother like two angry cat fighting for that one fry droped by a seven year old at a back ally.");
+										Hp -= badHp; 
+										if (Hp >= 1){
+											Console.WriteLine("you FALCON PUNCH, the doctors stomatch and he crumbels like a cookie");
+											Console.WriteLine("Plague doctor: AH my stomach");
+											Console.WriteLine("you see the rat start to nibble, on the doctor... then bite");
+											Console.WriteLine("Plague Doctor:WAIT WAIT WAIT, I HELP YOU GUY WHY WOULD YOU DO THISSSSSSssssss...");
+											sanity -= 30;
+											money -= 25;
+											Console.WriteLine($"your hp is {Hp}/{maxHp}, you got {money} amount of gold, you loss {sanity} amout of sanity,... ok I think I need to call my theripist.");
+										}
+										if (Hp <= 0){
+											Console.WriteLine("he quickly grabs you and rips you eye out");
+											Console.WriteLine("Plague Doctor: hohoho, youll be a great sacrfice for Brian, HOHOHOHOHOHOHOHOHOHO...");
+											Console.WriteLine("as you lay there dying you have on last thought. capybaras... are... over.......rated");
+											Console.WriteLine("GAME OVER, hey did rat are  he weakest mammal scientificly.... HA joking, just wanna rubsalt in the wound");
+										}
+									
+								}	
+								
+								}
+								
+								}
+							}
+																														          			     			       
+}			        
+}			        
+}			        
+}
 
