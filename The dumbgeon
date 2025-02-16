@@ -87,38 +87,38 @@ public class Program
 									Console.WriteLine("Plague doctor: hohohoho fan-TASTIC now ill just have to...");
 									Console.WriteLine("he says as he injects a needle into your skin to quick for you to react, owch");
 									Hp -= 1;
-									Console.WriteLine($"your hp is {Hp}/{maxHp} ok to consoner you as much as possible, I think that rat pee");
+									Console.WriteLine($"your hp is {Hp}/{maxHp} ok to consider you as much as possible, I think that rat pee");
 									String ratpee = Console.ReadLine();
 									if (ratpee == "y" || ratpee == "Y"){
-										Console.WriteLine("Plague doctor: ok now don't eat any form of peanut made substence and I think youll be all set now... GET OUT");
+										Console.WriteLine("Plague doctor: ok now don't eat any form of peanut made substance and I think youll be all set now... GET OUT");
 										Console.WriteLine("he says as he shoves you out the room");
 									}
 								if (checkA3 == "2"){
 									Console.WriteLine("Plague doctor: HOW DARE YOU!!! I MUST END YOU AND SACRIFICE YOU CORPSE TO BRIAN, RAT IT DINNER TIME, HOHOHOHOHOHOHOHOHOHOHOHOHOHOHOHOH");
-									Console.WriteLine("perpare for a tussel");
+									Console.WriteLine("prepare for a tussle");
 									Console.WriteLine($"{Hp}/{maxHp}");
 									badHp = 4; 
 									Console.WriteLine($"{badHp}");
-									Console.WriteLine("ok, ill throw you in a fastfood deepfryer soon eighteen centry, insain essilime escapi(1).");
-									Console.WriteLine("actully I think I am going to be the mouse in this cat and mouse situation bye bye(2).");
+									Console.WriteLine("ok, i'll throw you in a fast food deep fryer soon eighteenth century, insane asylum escapee(1).");
+									Console.WriteLine("actually I think I am going to be the mouse in this cat and mouse situation bye bye(2).");
 									String firsttussel = Console.ReadLine(); 
 									if (firsttussel == "1"){
-										Console.WriteLine("you two leap at eachother like two angry cat fighting for that one fry droped by a seven year old at a back ally.");
+										Console.WriteLine("you two leap at eachother like two angry cat fighting for that one fry dropped by a seven year old at a back alley.");
 										Hp -= badHp; 
 										if (Hp >= 1){
-											Console.WriteLine("you FALCON PUNCH, the doctors stomatch and he crumbels like a cookie");
+											Console.WriteLine("you FALCON PUNCH, the doctors stomach and he crumbles like a cookie");
 											Console.WriteLine("Plague doctor: AH my stomach");
 											Console.WriteLine("you see the rat start to nibble, on the doctor... then bite");
 											Console.WriteLine("Plague Doctor:WAIT WAIT WAIT, I HELP YOU GUY WHY WOULD YOU DO THISSSSSSssssss...");
 											sanity -= 30;
 											money -= 25;
-											Console.WriteLine($"your hp is {Hp}/{maxHp}, you got {money} amount of gold, you loss {sanity} amout of sanity,... ok I think I need to call my theripist.");
+											Console.WriteLine($"your hp is {Hp}/{maxHp}, you got {money} amount of gold, you loss {sanity} amount of sanity,... ok I think I need to call my therapist.");
 										}
 										if (Hp <= 0){
 											Console.WriteLine("he quickly grabs you and rips you eye out");
-											Console.WriteLine("Plague Doctor: hohoho, youll be a great sacrfice for Brian, HOHOHOHOHOHOHOHOHOHO...");
-											Console.WriteLine("as you lay there dying you have on last thought. capybaras... are... over.......rated");
-											Console.WriteLine("GAME OVER, hey did rat are  he weakest mammal scientificly.... HA joking, just wanna rubsalt in the wound");
+											Console.WriteLine("Plague Doctor: hohoho, you'll be a great sacrifice for Brian, HOHOHOHOHOHOHOHOHOHO...");
+											Console.WriteLine("as you lay there dying you have one last thought. capybaras... are... over.......rated");
+											Console.WriteLine("GAME OVER, hey did rats are  the weakest mammal scientifically.... HA joking, just wanna rub salt in the wound");
 										}
 									
 								}	
