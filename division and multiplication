@@ -1,0 +1,13 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		Console.WriteLine("Code division and multiplication");
+		int multiplication =  3 * 3; 
+		Console.WriteLine(multiplication);
+		int division = 3 / 3;
+		Console.WriteLine(division);
+	}
+}
