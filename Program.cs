@@ -11,6 +11,16 @@ public class Program
         Console.WriteLine("Han, Paper, Scissors!");
         Console.WriteLine("---------------------");
         Console.WriteLine(" ");
+        Console.WriteLine("do you want to play the game?(type yse to start)");
+        string playGame = Console.ReadLine();
+        if (playGame == "yes")
+        {
+            Console.WriteLine("perfect.");
+        }
+        else
+        {
+            Console.WriteLine("WRONG ANSWER. you will play the game.");
+        }
         int cpuPoints = 0;
         int points = 0;
         while ((points <= 3) && (cpuPoints <= 3))
@@ -19,12 +29,12 @@ public class Program
             Console.WriteLine("which do your pick, rock, paper, or scissor! (pick bellow)");
             string response = Console.ReadLine();
             // string[] means list, this has all the ai choices.
-            string[] cpuChoice = {"rock", "paper", "scissor"};
+            string[] cpuChoice = { "rock", "paper", "scissor" };
             //This picks the ai's choice. New make a new object(make an object class). We can use this object as a key for the random class. 
             Random rand = new Random();
             //This make the range at which the cpu can pick from.
-    
-            int cpuPick = rand.Next(0,3);
+
+            int cpuPick = rand.Next(0, 3);
             //This line prints the cpu's choice and 
             Console.WriteLine(cpuChoice[cpuPick]);
             //and in c# is && 
@@ -35,43 +45,54 @@ public class Program
             {
                 Console.WriteLine("Tie!");
             } //checks if player wins using rock
-            else if ((response == "rock" || response == "rocks") && cpuChoice[cpuPick] == "scissor")
+            else if ((response == "rock" || response == "rocks" || response == "Rock") &&
+                     cpuChoice[cpuPick] == "scissor")
             {
                 Console.WriteLine("Player got a crushing wins!");
                 points += 1;
             } //checks if player wins using paper
-            else if ((response == "paper" || response == "papers")  && cpuChoice[cpuPick] == "rock")
+            else if ((response == "paper" || response == "papers" || response == "Paper") &&
+                     cpuChoice[cpuPick] == "rock")
             {
                 Console.WriteLine("Player wraped up the CPU!");
                 points += 1;
             } //checks if player wins using paper
-            else if ((response == "scissor" || response == "scissors") && cpuChoice[cpuPick] == "paper")
+            else if ((response == "scissor" || response == "scissors" || response == "Scissor") &&
+                     cpuChoice[cpuPick] == "paper")
             {
                 Console.WriteLine("Player slices up the victory!");
                 points += 1;
             }
-            else if ((response == "scissor" || response == "scissors") && cpuChoice[cpuPick] == "rock")
+            else if ((response == "scissor" || response == "scissors" || response == "Scissor") &&
+                     cpuChoice[cpuPick] == "rock")
             {
                 Console.WriteLine("Cpu proves why they rock!");
                 cpuPoints += 1;
             }
-            else if ((response == "rock" || response == "rocks") && cpuChoice[cpuPick] == "paper")
+            else if ((response == "rock" || response == "rocks" || response == "Rock") && cpuChoice[cpuPick] == "paper")
             {
                 Console.WriteLine("Cpu gave player a paper cut!");
                 cpuPoints += 1;
             }
-            else if ((response == "paper" || response == "papers") && cpuChoice[cpuPick] == "scissor")
+            else if ((response == "paper" || response == "papers" || response == "Paper") &&
+                     cpuChoice[cpuPick] == "scissor")
             {
                 Console.WriteLine("Cpu made a scherenschnitte out of the player!");
                 cpuPoints += 1;
             }
-            else if(response == "han")
-            { 
-                Console.WriteLine("https://en.wikipedia.org/wiki/Rock_paper_scissors#:~:text=The%20first%20known%20mention%20of,206%20BCE%20%E2%80%93%20220%20CE).");
+            else if (response == "han" || response == "Han" || response == "hans")
+            {
+                Console.WriteLine(
+                    "https://en.wikipedia.org/wiki/Rock_paper_scissors#:~:text=The%20first%20known%20mention%20of,206%20BCE%20%E2%80%93%20220%20CE).");
                 cpuPoints += 1;
                 points += 1;
             }
-            Console.WriteLine($"Player points {points}, Cpu points {cpuPoints}");
+            else if(response != "paper" && response != "han" && response != "scissor" && response != "rock" && response != "Paper" && response != "Rock" && response != "Scissor" && response != "Han"  && response != "rocks" && response != "hans" && response != "papers" && response != "scissors") 
+            {
+                Console.WriteLine("Sorry, This is not an action, try again. OR ELSE, NOTHING WILL HAPPEN!");
+            }
+
+        Console.WriteLine($"Player points {points}, Cpu points {cpuPoints}");
             // We will add a point system today
 	    }
     }	
