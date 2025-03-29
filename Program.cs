@@ -11,7 +11,7 @@ public class Program
         Console.WriteLine("Han, Paper, Scissors!");
         Console.WriteLine("---------------------");
         Console.WriteLine(" ");
-        Console.WriteLine("do you want to play the game?(type yse to start)");
+        Console.WriteLine("do you want to play the game?(type yes to start)");
         string playGame = Console.ReadLine();
         if (playGame == "yes")
         {
@@ -94,6 +94,20 @@ public class Program
 
         Console.WriteLine($"Player points {points}, Cpu points {cpuPoints}");
             // We will add a point system today
-	    }
+        }
+
+        if (points < cpuPoints)
+        {
+            Console.WriteLine($"CPU won with a {cpuPoints} amount.");
+
+        }
+        else if (points > cpuPoints)
+        {
+            Console.WriteLine($"Player won with a {points} amount.");
+        }
+       else if (points == cpuPoints)
+        {
+            Console.WriteLine($"you got a tie with CPU having {cpuPoints}, and you having {points}.");
+        }
     }	
 }
