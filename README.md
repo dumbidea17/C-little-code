@@ -1,0 +1,1 @@
+A simple rock paper scissor game where you verse a CPU. To play you will type rock, paper, or scissors and the CPU will respond with its own action. The game ends when both players gets more then three points, with will end the game. 
